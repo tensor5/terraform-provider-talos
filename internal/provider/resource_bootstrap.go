@@ -2,22 +2,16 @@ package provider
 
 import (
 	"context"
-	"crypto/sha256"
 	"crypto/tls"
 	"crypto/x509"
 	"fmt"
 
-	"github.com/ghodss/yaml"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/talos-systems/talos/cmd/talosctl/pkg/talos/helpers"
 	"github.com/talos-systems/talos/pkg/machinery/api/machine"
-	tc "github.com/talos-systems/talos/pkg/machinery/client"
 	"github.com/talos-systems/talos/pkg/machinery/constants"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
-	"google.golang.org/protobuf/types/known/emptypb"
-	api "k8s.io/client-go/tools/clientcmd/api/v1"
 )
 
 func resourseBootstrap() *schema.Resource {
@@ -108,51 +102,7 @@ func resourceBootstrapCreate(ctx context.Context, d *schema.ResourceData, meta i
 		return diag.FromErr(err)
 	}
 
-	stream, err := client.Kubeconfig(ctx, &emptypb.Empty{})
-	if err != nil {
-		return diag.FromErr(err)
-	}
-
-	r, errCh, err := tc.ReadStream(stream)
-	if err != nil {
-		return diag.FromErr(err)
-	}
-
-	defer r.Close()
-
-	kubeconfigRaw, err := helpers.ExtractFileFromTarGz("kubeconfig", r)
-	if err != nil {
-		return diag.FromErr(err)
-	}
-
-	if err := <-errCh; err != nil {
-		return diag.FromErr(err)
-	}
-
-	d.Set("raw", string(kubeconfigRaw))
-
-	var kubeconfig api.Config
-	err = yaml.Unmarshal(kubeconfigRaw, &kubeconfig)
-	if err != nil {
-		return diag.FromErr(err)
-	}
-
-	if len(kubeconfig.Clusters) == 0 || len(kubeconfig.AuthInfos) == 0 {
-		return diag.Errorf("Invalid kubeconfig file.")
-	}
-
-	cluster := kubeconfig.Clusters[0].Cluster
-	user := kubeconfig.AuthInfos[0].AuthInfo
-
-	d.Set("client_certificate", string(user.ClientCertificateData))
-
-	d.Set("client_key", string(user.ClientKeyData))
-
-	d.Set("cluster_ca_certificate", string(cluster.CertificateAuthorityData))
-
-	d.SetId(fmt.Sprintf("%x", sha256.Sum256(kubeconfigRaw)))
-
-	return nil
+	return kubeconfigRead(ctx, client, d)
 }
 
 func resourceBootstrapDelete(ctx context.Context, d *schema.ResourceData, meta interface{}) diag.Diagnostics {

@@ -101,6 +101,10 @@ func dataSourceKubeconfigRead(ctx context.Context, d *schema.ResourceData, meta 
 	defer conn.Close()
 	client := machine.NewMachineServiceClient(conn)
 
+	return kubeconfigRead(ctx, client, d)
+}
+
+func kubeconfigRead(ctx context.Context, client machine.MachineServiceClient, d *schema.ResourceData) diag.Diagnostics {
 	stream, err := client.Kubeconfig(ctx, &emptypb.Empty{})
 	if err != nil {
 		return diag.FromErr(err)
