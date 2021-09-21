@@ -6,7 +6,7 @@ require (
 	github.com/ghodss/yaml v1.0.0
 	github.com/hashicorp/terraform-plugin-docs v0.5.0
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.7.1
-	github.com/talos-systems/talos v0.12.1
+	github.com/talos-systems/talos v0.12.2
 	github.com/talos-systems/talos/pkg/machinery v0.12.2
 	google.golang.org/grpc v1.40.0
 	google.golang.org/protobuf v1.27.1
