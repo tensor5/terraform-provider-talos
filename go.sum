@@ -1051,10 +1051,11 @@ github.com/talos-systems/go-retry v0.1.1-0.20201113203059-8c63d290a688/go.mod h1
 github.com/talos-systems/go-retry v0.3.1/go.mod h1:HiXQqyVStZ35uSY/MTLWVvQVmC3lIW2MS5VdDaMtoKM=
 github.com/talos-systems/go-smbios v0.1.0/go.mod h1:HxhrzAoTZ7ed5Z5VvtCvnCIrOxyXDS7V2B5hCetAMW8=
 github.com/talos-systems/grpc-proxy v0.2.0/go.mod h1:sm97Vc/z2cok3pu6ruNeszQej4KDxFrDgfWs4C1mtC4=
-github.com/talos-systems/net v0.3.0 h1:TG6PoiNdg9NmSeSjyecSgguUXzoJ8wp5a8RYlIdkq3Y=
 github.com/talos-systems/net v0.3.0/go.mod h1:VreSAyRmxMtqussAHSKMKkJQa1YwBTSVfkmE4Jydam4=
-github.com/talos-systems/talos v0.13.2 h1:XfVA0rO4MxwXsfrTvWkKgxRHRUuMWaYVeU4ORpz7Jqc=
-github.com/talos-systems/talos v0.13.2/go.mod h1:238xIFxpQ5fBRWrA1+hlsz0kCQ1N7tHx/SlKYocumeI=
+github.com/talos-systems/net v0.3.1-0.20211112122313-0abe5bdae8f8 h1:oT2MASZ8V3DuZbhaJWJ8oZ373zfmgXpvw2xLHM5cOYk=
+github.com/talos-systems/net v0.3.1-0.20211112122313-0abe5bdae8f8/go.mod h1:zhcGixNJz9dgwFiUwc7gkkAqdVqXagU1SNNoIVXYKGo=
+github.com/talos-systems/talos v0.13.3 h1:enZICSB9A8SLzF2Kdv4GIbZv93KPhK+P9WKOm9my4Fg=
+github.com/talos-systems/talos v0.13.3/go.mod h1:qKfAsuUd2pz1ZVj0P91oVdmYXdNO9F3fJJ0cbvFlkxE=
 github.com/talos-systems/talos/pkg/machinery v0.12.1 h1:FC20puPkim2C0pFN6SYwMX/i5Bto7oG6wei0hFbsOlM=
 github.com/talos-systems/talos/pkg/machinery v0.12.1/go.mod h1:qX77JMZawrDTQaJucqecdlFsHy+dbnZ9YL8Kw4qL7d4=
 github.com/tchap/go-patricia v2.2.6+incompatible/go.mod h1:bmLyhP68RS6kStMGxByiQ23RP/odRBOTVjwp2cDyi6I=
