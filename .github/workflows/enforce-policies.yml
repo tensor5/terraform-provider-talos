@@ -1,0 +1,14 @@
+name: Enforce policies
+on:
+  - pull_request
+jobs:
+  conform:
+    name: Conform
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.4.0
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Conform Action
+        uses: talos-systems/conform@v0.1.0-alpha.25
