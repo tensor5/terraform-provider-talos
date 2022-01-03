@@ -9,6 +9,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.4.0
         with:
+          fetch-depth: 0
           ref: ${{ github.event.pull_request.head.sha }}
+      - run: git fetch --no-tags origin master:master
       - name: Conform Action
         uses: talos-systems/conform@v0.1.0-alpha.25
