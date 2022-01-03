@@ -1,0 +1,7 @@
+*.tfvars
+
+.terraform.lock.hcl
+
+controlplane.yaml
+talosconfig
+worker.yaml
