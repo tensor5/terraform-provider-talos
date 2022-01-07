@@ -55,6 +55,20 @@ release:
     - glob: "terraform-registry-manifest.json"
       name_template: "{{ .ProjectName }}_{{ .Version }}_manifest.json"
   # If you want to manually examine the release before its live, uncomment this line:
-  # draft: true
+  draft: true
+
+  mode: replace
+
+  footer: |
+    **Full Changelog**: https://github.com/tensor5/terraform-provider-talos/compare/{{ .PreviousTag }}...{{ .Tag }}
+
 changelog:
-  skip: true
+  sort: asc
+  use: github
+  groups:
+    - title: "New Features"
+      regexp: "^.*feat[(\\w)]*:+.*$"
+      order: 0
+    - title: "Bug fixes"
+      regexp: "^.*fix[(\\w)]*:+.*$"
+      order: 1
