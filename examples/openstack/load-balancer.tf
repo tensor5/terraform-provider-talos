@@ -1,10 +1,6 @@
-data "openstack_networking_network_v2" "talos_network" {
-  name = var.network_name
-}
-
 resource "openstack_lb_loadbalancer_v2" "talos_control_plane" {
   name           = "talos-control-plane"
-  vip_network_id = data.openstack_networking_network_v2.talos_network.id
+  vip_network_id = var.external_network
 }
 
 resource "openstack_lb_listener_v2" "talos_control_plane" {
@@ -33,7 +29,8 @@ resource "openstack_lb_member_v2" "talos_control_plane" {
   count = var.control_plane_number
 
   name          = "talos-control-plane-${count.index}"
-  address       = openstack_compute_instance_v2.talos_control_plane[count.index].network[0].fixed_ip_v4
+  address       = openstack_networking_port_v2.talos_control_plane[count.index].all_fixed_ips[0]
   pool_id       = openstack_lb_pool_v2.talos_control_plane.id
   protocol_port = 6443
+  subnet_id     = openstack_networking_subnet_v2.talos_internal_ipv4.id
 }

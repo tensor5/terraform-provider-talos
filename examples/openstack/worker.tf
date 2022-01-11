@@ -6,7 +6,7 @@ resource "openstack_compute_instance_v2" "talos_worker" {
   image_id    = openstack_images_image_v2.talos.id
 
   network {
-    name = var.network_name
+    port = openstack_networking_port_v2.talos_worker[count.index].id
   }
 
   user_data = yamlencode(merge(
@@ -18,6 +18,14 @@ resource "openstack_compute_instance_v2" "talos_worker" {
           controlPlane = {
             endpoint = "https://${openstack_lb_loadbalancer_v2.talos_control_plane.vip_address}"
           }
+        }
+      )
+      machine = merge(
+        local.worker_config.machine,
+        {
+          certSANs = [
+            openstack_networking_floatingip_v2.talos_worker[count.index].address,
+          ]
         }
       )
     }
