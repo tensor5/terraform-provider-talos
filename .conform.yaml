@@ -24,4 +24,6 @@ policies:
           - revert
           - style
           - test
+        scopes:
+          - deps
         descriptionLength: 72
