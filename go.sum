@@ -1098,8 +1098,8 @@ github.com/talos-systems/grpc-proxy v0.2.0/go.mod h1:sm97Vc/z2cok3pu6ruNeszQej4K
 github.com/talos-systems/net v0.3.1 h1:F9mlDgKE4XVfgpoRmacVUTEAMAeQ5xuOaeCl+A9a0Ok=
 github.com/talos-systems/net v0.3.1/go.mod h1:zhcGixNJz9dgwFiUwc7gkkAqdVqXagU1SNNoIVXYKGo=
 github.com/talos-systems/siderolink v0.1.0/go.mod h1:bEGwDYl9QgC3oZ4kdnJTuR2HX/XlUhxZjx/QAakKuBc=
-github.com/talos-systems/talos v0.14.0 h1:3RyC7FgpQ5ZWjiyfz57u4qG/l0+pR52hDSJnGPxBgZg=
-github.com/talos-systems/talos v0.14.0/go.mod h1:UWuLwoQGsUHEddTqwfvxNOyYTOzd2n9KiV+pyfIJT5M=
+github.com/talos-systems/talos v0.14.1 h1:z6pr4mvs32DiG8M46tb88v2d9jBNLEBq6zxWgSlTC2U=
+github.com/talos-systems/talos v0.14.1/go.mod h1:GavvnvQzEp4A00+R8ecpd26TpXWVroRhKLavIK3P2fI=
 github.com/talos-systems/talos/pkg/machinery v0.14.0 h1:UKk33z236rMWHsSMhu6ExlG1uB5dF7jws3qRDP+yycA=
 github.com/talos-systems/talos/pkg/machinery v0.14.0/go.mod h1:ctbMKkPJv8aiGfXT2NuWaoHch7fx62GaU81OVOyNVbc=
 github.com/tchap/go-patricia v2.2.6+incompatible/go.mod h1:bmLyhP68RS6kStMGxByiQ23RP/odRBOTVjwp2cDyi6I=
