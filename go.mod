@@ -79,8 +79,11 @@ require (
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/oklog/run v1.1.0 // indirect
+	github.com/onsi/ginkgo v1.16.4 // indirect
+	github.com/onsi/gomega v1.15.0 // indirect
 	github.com/posener/complete v1.2.3 // indirect
 	github.com/russross/blackfriday v1.6.0 // indirect
+	github.com/stretchr/objx v0.2.0 // indirect
 	github.com/talos-systems/crypto v0.3.4 // indirect
 	github.com/talos-systems/net v0.3.1 // indirect
 	github.com/ulikunitz/xz v0.5.10 // indirect
@@ -103,5 +106,3 @@ require (
 	sigs.k8s.io/json v0.0.0-20211208200746-9f7c6b3444d2 // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.2.1 // indirect
 )
-
-replace github.com/talos-systems/talos/pkg/machinery => github.com/talos-systems/talos/pkg/machinery v0.14.0
