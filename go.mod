@@ -8,7 +8,7 @@ require (
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.10.1
 	github.com/talos-systems/talos v0.14.3
 	github.com/talos-systems/talos/pkg/machinery v0.14.3
-	google.golang.org/grpc v1.44.0
+	google.golang.org/grpc v1.45.0
 	google.golang.org/protobuf v1.27.1
 	k8s.io/client-go v0.23.4
 )
