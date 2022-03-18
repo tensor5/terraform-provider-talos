@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/ghodss/yaml v1.0.0
 	github.com/hashicorp/terraform-plugin-docs v0.7.0
-	github.com/hashicorp/terraform-plugin-sdk/v2 v2.11.0
+	github.com/hashicorp/terraform-plugin-sdk/v2 v2.12.0
 	github.com/talos-systems/talos v0.14.3
 	github.com/talos-systems/talos/pkg/machinery v0.14.3
 	google.golang.org/grpc v1.45.0
