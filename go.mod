@@ -9,7 +9,7 @@ require (
 	github.com/talos-systems/talos v0.14.3
 	github.com/talos-systems/talos/pkg/machinery v0.14.3
 	google.golang.org/grpc v1.45.0
-	google.golang.org/protobuf v1.27.1
+	google.golang.org/protobuf v1.28.0
 	k8s.io/client-go v0.23.5
 )
 
