@@ -10,7 +10,7 @@ require (
 	github.com/talos-systems/talos/pkg/machinery v1.0.3
 	google.golang.org/grpc v1.45.0
 	google.golang.org/protobuf v1.28.0
-	k8s.io/client-go v0.23.5
+	k8s.io/client-go v0.23.6
 )
 
 require (
@@ -87,7 +87,7 @@ require (
 	google.golang.org/genproto v0.0.0-20220228155957-1da8797a5878 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
-	k8s.io/apimachinery v0.23.5 // indirect
+	k8s.io/apimachinery v0.23.6 // indirect
 	k8s.io/klog/v2 v2.40.1 // indirect
 	sigs.k8s.io/json v0.0.0-20211208200746-9f7c6b3444d2 // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.2.1 // indirect
