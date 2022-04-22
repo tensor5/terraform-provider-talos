@@ -1,6 +1,6 @@
 module github.com/tensor5/terraform-provider-talos
 
-go 1.17
+go 1.18
 
 require (
 	github.com/ghodss/yaml v1.0.0
