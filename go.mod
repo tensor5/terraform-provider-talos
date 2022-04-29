@@ -6,8 +6,8 @@ require (
 	github.com/ghodss/yaml v1.0.0
 	github.com/hashicorp/terraform-plugin-docs v0.7.0
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.14.0
-	github.com/talos-systems/talos v1.0.3
-	github.com/talos-systems/talos/pkg/machinery v1.0.3
+	github.com/talos-systems/talos v1.0.4
+	github.com/talos-systems/talos/pkg/machinery v1.0.4
 	google.golang.org/grpc v1.45.0
 	google.golang.org/protobuf v1.28.0
 	k8s.io/client-go v0.23.6
