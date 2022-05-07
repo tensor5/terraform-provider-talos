@@ -31,7 +31,8 @@ func New(version string) func() *schema.Provider {
 				"talos_kubeconfig": dataSourceKubeconfig(),
 			},
 			ResourcesMap: map[string]*schema.Resource{
-				"talos_bootstrap": resourseBootstrap(),
+				"talos_bootstrap":  resourseBootstrap(),
+				"talos_gen_config": resourseGenConfig(),
 			},
 		}
 
