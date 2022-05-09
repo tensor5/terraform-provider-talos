@@ -16,6 +16,7 @@
             pkgs.go-outline
             pkgs.go-tools
             pkgs.gopls
+            pkgs.goreleaser
             pkgs.talosctl
             pkgs.terraform
           ];
