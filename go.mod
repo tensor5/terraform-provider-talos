@@ -14,7 +14,7 @@ require (
 	google.golang.org/grpc v1.47.0
 	google.golang.org/protobuf v1.28.0
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
-	k8s.io/client-go v0.24.0
+	k8s.io/client-go v0.24.2
 )
 
 require (
@@ -189,8 +189,8 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	inet.af/netaddr v0.0.0-20211027220019-c74959edd3b6 // indirect
 	inet.af/tcpproxy v0.0.0-20220326234310-be3ee21c9fa0 // indirect
-	k8s.io/api v0.24.0 // indirect
-	k8s.io/apimachinery v0.24.0 // indirect
+	k8s.io/api v0.24.2 // indirect
+	k8s.io/apimachinery v0.24.2 // indirect
 	k8s.io/apiserver v0.24.0 // indirect
 	k8s.io/component-base v0.24.0 // indirect
 	k8s.io/cri-api v0.24.0 // indirect
