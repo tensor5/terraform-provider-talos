@@ -8,7 +8,7 @@ require (
 	github.com/ghodss/yaml v1.0.0
 	github.com/google/uuid v1.3.0
 	github.com/hashicorp/terraform-plugin-docs v0.10.1
-	github.com/hashicorp/terraform-plugin-sdk/v2 v2.16.0
+	github.com/hashicorp/terraform-plugin-sdk/v2 v2.17.0
 	github.com/talos-systems/talos v1.0.5
 	github.com/talos-systems/talos/pkg/machinery v1.0.6
 	google.golang.org/grpc v1.47.0
@@ -90,7 +90,7 @@ require (
 	github.com/hashicorp/logutils v1.0.0 // indirect
 	github.com/hashicorp/terraform-exec v0.16.1 // indirect
 	github.com/hashicorp/terraform-json v0.14.0 // indirect
-	github.com/hashicorp/terraform-plugin-go v0.9.0 // indirect
+	github.com/hashicorp/terraform-plugin-go v0.9.1 // indirect
 	github.com/hashicorp/terraform-plugin-log v0.4.0 // indirect
 	github.com/hashicorp/terraform-registry-address v0.0.0-20220422185603-6772e136ec01 // indirect
 	github.com/hashicorp/terraform-svchost v0.0.0-20200729002733-f050f53b9734 // indirect
