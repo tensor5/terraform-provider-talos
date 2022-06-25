@@ -1,19 +1,25 @@
 name: Dependabot auto-merge
 
-on: pull_request
-
-permissions:
-  contents: write
+on:
+  schedule:
+    - cron: "*/30 * * * *"
 
 jobs:
-  dependabot:
+  auto_merge_dependabot_pr:
     runs-on: ubuntu-22.04
-    if: ${{ github.actor == 'dependabot[bot]' }}
     steps:
-      - name: Dependabot metadata
-        uses: dependabot/fetch-metadata@v1.3.1
-      - name: Enable auto-merge for Dependabot PR
-        run: gh pr merge --auto --rebase "$PR_URL"
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-          PR_URL: ${{github.event.pull_request.html_url}}
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPOSITORY: ${{ github.repository }}
+        name: Fast-forward merge first Dependabot PR
+        run: |
+          branch=$(gh pr list -R "$REPOSITORY" --json author,headRefName,mergeStateStatus --jq 'map(select(.author.login == "dependabot" and .mergeStateStatus == "CLEAN")) | .[-1].headRefName')
+          if [ -n "$branch" ]; then
+            git config user.name github-actions
+            git config user.email github-actions@github.com
+            git merge --ff-only "origin/$branch"
+            git push
+          fi
