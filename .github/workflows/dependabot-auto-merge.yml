@@ -11,6 +11,7 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
+      - uses: snow-actions/git-config-user@v1.0.0
       - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPOSITORY: ${{ github.repository }}
@@ -18,8 +19,6 @@ jobs:
         run: |
           branch=$(gh pr list -R "$REPOSITORY" --json author,headRefName,mergeStateStatus --jq 'map(select(.author.login == "dependabot" and .mergeStateStatus == "CLEAN")) | .[-1].headRefName')
           if [ -n "$branch" ]; then
-            git config user.name github-actions
-            git config user.email github-actions@github.com
             git merge --ff-only "origin/$branch"
             git push
           fi
