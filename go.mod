@@ -7,7 +7,7 @@ replace inet.af/tcpproxy => github.com/smira/tcpproxy v0.0.0-20201015133617-de5f
 require (
 	github.com/ghodss/yaml v1.0.0
 	github.com/google/uuid v1.3.0
-	github.com/hashicorp/terraform-plugin-docs v0.11.0
+	github.com/hashicorp/terraform-plugin-docs v0.12.0
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.17.0
 	github.com/talos-systems/talos v1.0.6
 	github.com/talos-systems/talos/pkg/machinery v1.0.6
