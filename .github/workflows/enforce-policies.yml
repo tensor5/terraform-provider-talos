@@ -13,4 +13,4 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
       - run: git fetch --no-tags origin master:master
       - name: Conform Action
-        uses: talos-systems/conform@v0.1.0-alpha.25
+        uses: talos-systems/conform@v0.1.0-alpha.26
