@@ -2,7 +2,8 @@ name: Dependabot auto-merge
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "34 12 * * *"
+  workflow_dispatch:
 
 jobs:
   auto_merge_dependabot_pr:
