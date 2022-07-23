@@ -14,7 +14,7 @@ builds:
     flags:
       - -trimpath
     ldflags:
-      - "-s -w -X main.version={{.Version}} -X main.commit={{.Commit}} -X github.com/talos-systems/talos/pkg/version.Tag=v1.0.5"
+      - "-s -w -X main.version={{.Version}} -X main.commit={{.Commit}}"
     goos:
       - windows
       - linux

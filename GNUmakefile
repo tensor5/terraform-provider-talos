@@ -7,8 +7,6 @@ PROVIDER_NAMESPACE=tensor5
 PROVIDER_TYPE=talos
 PROVIDER_TARGET=$(shell go env GOOS)_$(shell go env GOARCH)
 PROVIDER_PATH=~/.terraform.d/plugins/$(PROVIDER_HOSTNAME)/$(PROVIDER_NAMESPACE)/$(PROVIDER_TYPE)/$(VERSION)/$(PROVIDER_TARGET)
-TALOS_VERSION=1.0.5
-
 
 default: testacc
 
@@ -16,8 +14,7 @@ build:
 	@mkdir -p $(PROVIDER_PATH)
 	go build \
 		-tags release \
-		-ldflags '-X $(MODULE)/internal/config.Version=$(GIT_VERSION) \
-		    -X github.com/talos-systems/talos/pkg/version.Tag=v$(TALOS_VERSION)' \
+		-ldflags '-X $(MODULE)/internal/config.Version=$(GIT_VERSION)' \
 		-o $(PROVIDER_PATH)/terraform-provider-$(PROVIDER_TYPE)_v$(VERSION)
 
 .PHONY: docs
