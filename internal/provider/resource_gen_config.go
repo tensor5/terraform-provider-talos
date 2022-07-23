@@ -8,11 +8,12 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/talos-systems/talos/cmd/talosctl/cmd/mgmt"
+	"github.com/talos-systems/talos/cmd/talosctl/pkg/mgmt/helpers"
+	"github.com/talos-systems/talos/pkg/images"
 	"github.com/talos-systems/talos/pkg/machinery/config"
 	"github.com/talos-systems/talos/pkg/machinery/config/types/v1alpha1"
 	"github.com/talos-systems/talos/pkg/machinery/config/types/v1alpha1/generate"
 	"github.com/talos-systems/talos/pkg/machinery/constants"
-	"github.com/talos-systems/talos/pkg/version"
 	"gopkg.in/yaml.v3"
 )
 
@@ -90,7 +91,7 @@ func resourseGenConfig() *schema.Resource {
 			"install_image": {
 				Type:        schema.TypeString,
 				Optional:    true,
-				Default:     fmt.Sprintf("ghcr.io/siderolabs/installer:%s", version.Tag),
+				Default:     helpers.DefaultImage(images.DefaultInstallerImageRepository),
 				Description: "The image used to perform an installation.",
 			},
 			"additional_sans": {
