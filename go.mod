@@ -9,7 +9,7 @@ require (
 	github.com/google/uuid v1.3.0
 	github.com/hashicorp/terraform-plugin-docs v0.13.0
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.19.0
-	github.com/talos-systems/talos v1.1.1
+	github.com/talos-systems/talos v1.1.2
 	github.com/talos-systems/talos/pkg/machinery v1.1.2
 	google.golang.org/grpc v1.48.0
 	google.golang.org/protobuf v1.28.0
@@ -189,9 +189,9 @@ require (
 	inet.af/tcpproxy v0.0.0-20220326234310-be3ee21c9fa0 // indirect
 	k8s.io/api v0.24.3 // indirect
 	k8s.io/apimachinery v0.24.3 // indirect
-	k8s.io/apiserver v0.24.2 // indirect
-	k8s.io/component-base v0.24.2 // indirect
-	k8s.io/cri-api v0.24.2 // indirect
+	k8s.io/apiserver v0.24.3 // indirect
+	k8s.io/component-base v0.24.3 // indirect
+	k8s.io/cri-api v0.24.3 // indirect
 	k8s.io/klog/v2 v2.60.1 // indirect
 	k8s.io/kube-openapi v0.0.0-20220413171646-5e7f5fdc6da6 // indirect
 	k8s.io/utils v0.0.0-20220210201930-3a6ce19ff2f9 // indirect
