@@ -12,7 +12,7 @@ require (
 	github.com/talos-systems/talos v1.1.2
 	github.com/talos-systems/talos/pkg/machinery v1.1.2
 	google.golang.org/grpc v1.48.0
-	google.golang.org/protobuf v1.28.0
+	google.golang.org/protobuf v1.28.1
 	gopkg.in/yaml.v3 v3.0.1
 	k8s.io/client-go v0.24.3
 )
