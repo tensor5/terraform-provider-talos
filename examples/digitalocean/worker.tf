@@ -7,18 +7,5 @@ resource "digitalocean_droplet" "worker" {
   region             = var.region
   size               = var.worker_size
   ssh_keys           = [var.ssh_key_fingerprint]
-
-  user_data = yamlencode(merge(
-    local.worker_config,
-    {
-      cluster = merge(
-        local.worker_config.cluster,
-        {
-          controlPlane = {
-            endpoint = "https://${digitalocean_loadbalancer.control_plane.ip}"
-          }
-        }
-      )
-    }
-  ))
+  user_data          = talos_gen_config.config.worker_config
 }

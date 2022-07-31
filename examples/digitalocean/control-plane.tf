@@ -8,18 +8,5 @@ resource "digitalocean_droplet" "control_plane" {
   size               = var.control_plane_size
   ssh_keys           = [var.ssh_key_fingerprint]
   tags               = [var.control_plane_tag]
-
-  user_data = yamlencode(merge(
-    local.control_plane_config,
-    {
-      cluster = merge(
-        local.control_plane_config.cluster,
-        {
-          controlPlane = {
-            endpoint = "https://${digitalocean_loadbalancer.control_plane.ip}"
-          }
-        }
-      )
-    }
-  ))
+  user_data          = talos_gen_config.config.control_plane_config
 }
