@@ -26,5 +26,5 @@ policies:
           - test
         scopes:
           - deps
-          - version
+          - master
         descriptionLength: 72
