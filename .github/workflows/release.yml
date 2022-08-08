@@ -29,7 +29,6 @@ jobs:
         with:
           bump-minor-pre-major: true
           package-name: terraform-provider-talos
-          pull-request-title-pattern: "chore(version): release v${version}"
           release-type: go
           token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
   goreleaser:
