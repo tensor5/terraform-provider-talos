@@ -29,7 +29,7 @@ Generates a configuration for Talos cluster.
 - `dns_domain` (String) The dns domain to use for cluster.
 - `install_disk` (String) The disk to install to.
 - `install_image` (String) The image used to perform an installation.
-- `kubernetes_version` (String) Desired kubernetes version to run (default "1.24.2").
+- `kubernetes_version` (String) Desired kubernetes version to run (default "1.24.3").
 - `persist` (Boolean) The desired persist value for configs.
 - `registry_mirrors` (Map of String) List of registry mirrors to use in format: <registry host>=<mirror URL>.
 - `talos_version` (String) The desired Talos version to generate config for (backwards compatibility, e.g. v0.8).
