@@ -3,7 +3,6 @@ resource "digitalocean_droplet" "worker" {
 
   image              = digitalocean_custom_image.talos.id
   name               = "talos-worker-${count.index}"
-  private_networking = true
   region             = var.region
   size               = var.worker_size
   ssh_keys           = [var.ssh_key_fingerprint]

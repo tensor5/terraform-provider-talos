@@ -3,7 +3,6 @@ resource "digitalocean_droplet" "control_plane" {
 
   image              = digitalocean_custom_image.talos.id
   name               = "talos-control-plane-${count.index}"
-  private_networking = true
   region             = var.region
   size               = var.control_plane_size
   ssh_keys           = [var.ssh_key_fingerprint]
