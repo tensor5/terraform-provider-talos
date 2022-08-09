@@ -5,4 +5,4 @@ terraform init
 terraform apply
 ```
 
-Use `talosctl --talosconfig talosconfig` to inspect your cluster.
+Use `talosctl --talosconfig talosconfig` and `kubectl --kubeconfig kubeconfig` to inspect your cluster.

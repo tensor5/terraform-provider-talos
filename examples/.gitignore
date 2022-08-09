@@ -3,5 +3,6 @@
 .terraform.lock.hcl
 
 controlplane.yaml
+kubeconfig
 talosconfig
 worker.yaml

@@ -17,6 +17,7 @@
             pkgs.go-tools
             pkgs.gopls
             pkgs.goreleaser
+            pkgs.kubectl
             pkgs.talosctl
             pkgs.terraform
           ];

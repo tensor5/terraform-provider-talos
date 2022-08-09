@@ -19,8 +19,9 @@ resource "talos_bootstrap" "digitalocean" {
   machine_key = base64decode(local.talos_config.key)
 }
 
-output "kubeconfig" {
-  value = talos_bootstrap.digitalocean.raw
+resource "local_file" "kube_config" {
+  content  = talos_bootstrap.digitalocean.raw
+  filename = "${path.module}/kubeconfig"
 }
 
 provider "kubernetes" {

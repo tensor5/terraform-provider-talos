@@ -7,3 +7,5 @@ terraform apply
 ```
 
 (tested on [VEXXHOST](https://vexxhost.com)).
+
+Use `talosctl --talosconfig talosconfig` and `kubectl --kubeconfig kubeconfig` to inspect your cluster.

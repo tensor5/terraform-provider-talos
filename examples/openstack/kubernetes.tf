@@ -9,8 +9,9 @@ resource "talos_bootstrap" "openstack" {
   machine_key = base64decode(local.talos_config.contexts.openstack.key)
 }
 
-output "kubeconfig" {
-  value = talos_bootstrap.openstack
+resource "local_file" "kube_config" {
+  content  = talos_bootstrap.openstack.raw
+  filename = "${path.module}/kubeconfig"
 }
 
 provider "kubernetes" {
