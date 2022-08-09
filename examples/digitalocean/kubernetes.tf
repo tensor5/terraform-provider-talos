@@ -24,7 +24,7 @@ output "kubeconfig" {
 }
 
 provider "kubernetes" {
-  host                   = digitalocean_loadbalancer.control_plane.ip
+  host                   = "https://${digitalocean_loadbalancer.control_plane.ip}"
   client_certificate     = talos_bootstrap.digitalocean.client_certificate
   client_key             = talos_bootstrap.digitalocean.client_key
   cluster_ca_certificate = talos_bootstrap.digitalocean.cluster_ca_certificate
