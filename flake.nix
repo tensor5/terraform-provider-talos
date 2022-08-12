@@ -12,11 +12,14 @@
       {
         devShells.default = pkgs.mkShell {
           packages = [
+            pkgs.delve
             pkgs.go_1_18
-            pkgs.go-outline
             pkgs.go-tools
+            pkgs.gomodifytags
             pkgs.gopls
             pkgs.goreleaser
+            pkgs.gotests
+            pkgs.impl
             pkgs.kubectl
             pkgs.talosctl
             pkgs.terraform
