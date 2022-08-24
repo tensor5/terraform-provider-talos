@@ -14,7 +14,7 @@ require (
 	google.golang.org/grpc v1.48.0
 	google.golang.org/protobuf v1.28.1
 	gopkg.in/yaml.v3 v3.0.1
-	k8s.io/client-go v0.24.4
+	k8s.io/client-go v0.25.0
 )
 
 require (
@@ -56,6 +56,7 @@ require (
 	github.com/dustin/go-humanize v1.0.0 // indirect
 	github.com/emicklei/dot v0.16.0 // indirect
 	github.com/emicklei/go-restful v2.15.0+incompatible // indirect
+	github.com/emicklei/go-restful/v3 v3.8.0 // indirect
 	github.com/evanphx/json-patch v5.6.0+incompatible // indirect
 	github.com/fatih/color v1.13.0 // indirect
 	github.com/gertd/go-pluralize v0.2.1 // indirect
@@ -128,7 +129,6 @@ require (
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/oklog/run v1.1.0 // indirect
 	github.com/onsi/ginkgo v1.16.5 // indirect
-	github.com/onsi/gomega v1.19.0 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/opencontainers/image-spec v1.0.3-0.20211202183452-c5a74bcca799 // indirect
 	github.com/opencontainers/runc v1.1.2 // indirect
@@ -171,10 +171,10 @@ require (
 	go4.org/intern v0.0.0-20220301175310-a089fc204883 // indirect
 	go4.org/unsafe/assume-no-moving-gc v0.0.0-20211027215541-db492cf91b37 // indirect
 	golang.org/x/crypto v0.0.0-20220622213112-05595931fe9d // indirect
-	golang.org/x/net v0.0.0-20220617184016-355a448f1bc9 // indirect
+	golang.org/x/net v0.0.0-20220722155237-a158d28d115b // indirect
 	golang.org/x/oauth2 v0.0.0-20220608161450-d0670ef3b1eb // indirect
 	golang.org/x/sync v0.0.0-20220601150217-0de741cfad7f // indirect
-	golang.org/x/sys v0.0.0-20220627191245-f75cf1eec38b // indirect
+	golang.org/x/sys v0.0.0-20220722155257-8c9f86f7a55f // indirect
 	golang.org/x/term v0.0.0-20220526004731-065cf7ba2467 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/time v0.0.0-20220411224347-583f2d630306 // indirect
@@ -187,15 +187,15 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	inet.af/netaddr v0.0.0-20211027220019-c74959edd3b6 // indirect
 	inet.af/tcpproxy v0.0.0-20220326234310-be3ee21c9fa0 // indirect
-	k8s.io/api v0.24.4 // indirect
-	k8s.io/apimachinery v0.24.4 // indirect
+	k8s.io/api v0.25.0 // indirect
+	k8s.io/apimachinery v0.25.0 // indirect
 	k8s.io/apiserver v0.24.3 // indirect
 	k8s.io/component-base v0.24.3 // indirect
 	k8s.io/cri-api v0.24.3 // indirect
-	k8s.io/klog/v2 v2.60.1 // indirect
-	k8s.io/kube-openapi v0.0.0-20220413171646-5e7f5fdc6da6 // indirect
-	k8s.io/utils v0.0.0-20220210201930-3a6ce19ff2f9 // indirect
-	sigs.k8s.io/json v0.0.0-20211208200746-9f7c6b3444d2 // indirect
-	sigs.k8s.io/structured-merge-diff/v4 v4.2.1 // indirect
+	k8s.io/klog/v2 v2.70.1 // indirect
+	k8s.io/kube-openapi v0.0.0-20220803162953-67bda5d908f1 // indirect
+	k8s.io/utils v0.0.0-20220728103510-ee6ede2d64ed // indirect
+	sigs.k8s.io/json v0.0.0-20220713155537-f223a00ba0e2 // indirect
+	sigs.k8s.io/structured-merge-diff/v4 v4.2.3 // indirect
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
