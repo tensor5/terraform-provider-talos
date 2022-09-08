@@ -9,7 +9,7 @@ require (
 	github.com/google/uuid v1.3.0
 	github.com/hashicorp/terraform-plugin-docs v0.13.0
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.21.0
-	github.com/talos-systems/talos v1.2.0
+	github.com/talos-systems/talos v1.2.1
 	github.com/talos-systems/talos/pkg/machinery v1.2.1
 	google.golang.org/grpc v1.49.0
 	google.golang.org/protobuf v1.28.1
