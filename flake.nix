@@ -13,7 +13,7 @@
         devShells.default = pkgs.mkShell {
           packages = [
             pkgs.delve
-            pkgs.go_1_18
+            pkgs.go_1_19
             pkgs.go-tools
             pkgs.gomodifytags
             pkgs.gopls
