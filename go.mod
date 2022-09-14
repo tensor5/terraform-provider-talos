@@ -10,7 +10,7 @@ require (
 	github.com/hashicorp/terraform-plugin-docs v0.13.0
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.22.0
 	github.com/talos-systems/talos v1.2.1
-	github.com/talos-systems/talos/pkg/machinery v1.2.1
+	github.com/talos-systems/talos/pkg/machinery v1.2.2
 	google.golang.org/grpc v1.49.0
 	google.golang.org/protobuf v1.28.1
 	gopkg.in/yaml.v3 v3.0.1
@@ -152,7 +152,7 @@ require (
 	github.com/spf13/cast v1.5.0 // indirect
 	github.com/spf13/cobra v1.5.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
-	github.com/talos-systems/crypto v0.3.6 // indirect
+	github.com/talos-systems/crypto v0.3.7 // indirect
 	github.com/talos-systems/go-blockdevice v0.3.4 // indirect
 	github.com/talos-systems/go-debug v0.2.1 // indirect
 	github.com/talos-systems/go-loadbalancer v0.1.3 // indirect
