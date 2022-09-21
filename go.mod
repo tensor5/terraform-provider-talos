@@ -10,7 +10,7 @@ require (
 	github.com/hashicorp/terraform-plugin-docs v0.13.0
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.23.0
 	github.com/talos-systems/talos v1.2.2
-	github.com/talos-systems/talos/pkg/machinery v1.2.2
+	github.com/talos-systems/talos/pkg/machinery v1.2.3
 	google.golang.org/grpc v1.49.0
 	google.golang.org/protobuf v1.28.1
 	gopkg.in/yaml.v3 v3.0.1
@@ -147,7 +147,7 @@ require (
 	github.com/ryanuber/go-glob v1.0.0 // indirect
 	github.com/shopspring/decimal v1.3.1 // indirect
 	github.com/siderolabs/go-pointer v1.0.0 // indirect
-	github.com/siderolabs/protoenc v0.1.3 // indirect
+	github.com/siderolabs/protoenc v0.1.4-0.20220912144557-28f42ee12889 // indirect
 	github.com/sirupsen/logrus v1.8.1 // indirect
 	github.com/spf13/cast v1.5.0 // indirect
 	github.com/spf13/cobra v1.5.0 // indirect
