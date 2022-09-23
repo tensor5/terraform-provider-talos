@@ -27,7 +27,6 @@ Download the kubeconfig information from a Talos node.
 - `client_certificate` (String) PEM-encoded client certificate for TLS authentication.
 - `client_key` (String) PEM-encoded client certificate key for TLS authentication.
 - `cluster_ca_certificate` (String) PEM-encoded root certificates bundle for TLS authentication.
-- `id` (String) The ID of this resource.
 - `raw` (String) Content of kubeconfig file.
 
 
