@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.3.0](https://github.com/tensor5/terraform-provider-talos/compare/v0.2.0...v0.3.0) (2022-09-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* migrate to Terraform Plugin Framework
+
+### Features
+
+* migrate to Terraform Plugin Framework ([51ead6c](https://github.com/tensor5/terraform-provider-talos/commit/51ead6c19d137de32fe0eedb11e360a5a92a19a9))
+
 ## [0.2.0](https://github.com/tensor5/terraform-provider-talos/compare/v0.1.0...v0.2.0) (2022-08-08)
 
 
