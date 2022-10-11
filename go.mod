@@ -11,7 +11,7 @@ require (
 	github.com/hashicorp/terraform-plugin-go v0.14.0
 	github.com/hashicorp/terraform-plugin-log v0.7.0
 	github.com/talos-systems/talos v1.2.3
-	github.com/talos-systems/talos/pkg/machinery v1.2.3
+	github.com/talos-systems/talos/pkg/machinery v1.2.4
 	google.golang.org/grpc v1.50.0
 	google.golang.org/protobuf v1.28.1
 	gopkg.in/yaml.v3 v3.0.1
