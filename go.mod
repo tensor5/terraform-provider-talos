@@ -12,7 +12,7 @@ require (
 	github.com/hashicorp/terraform-plugin-log v0.7.0
 	github.com/talos-systems/talos v1.2.3
 	github.com/talos-systems/talos/pkg/machinery v1.2.3
-	google.golang.org/grpc v1.50.0
+	google.golang.org/grpc v1.50.1
 	google.golang.org/protobuf v1.28.1
 	gopkg.in/yaml.v3 v3.0.1
 	k8s.io/client-go v0.25.3
