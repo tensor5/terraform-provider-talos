@@ -7,9 +7,9 @@ replace inet.af/tcpproxy => github.com/smira/tcpproxy v0.0.0-20201015133617-de5f
 require (
 	github.com/ghodss/yaml v1.0.0
 	github.com/hashicorp/terraform-plugin-docs v0.13.0
-	github.com/hashicorp/terraform-plugin-framework v0.15.0
+	github.com/hashicorp/terraform-plugin-framework v1.2.0
 	github.com/hashicorp/terraform-plugin-go v0.14.3
-	github.com/hashicorp/terraform-plugin-log v0.7.0
+	github.com/hashicorp/terraform-plugin-log v0.8.0
 	github.com/talos-systems/talos v1.2.3
 	github.com/talos-systems/talos/pkg/machinery v1.2.3
 	google.golang.org/grpc v1.52.0
@@ -79,7 +79,7 @@ require (
 	github.com/hashicorp/go-checkpoint v0.5.0 // indirect
 	github.com/hashicorp/go-cleanhttp v0.5.2 // indirect
 	github.com/hashicorp/go-getter v1.6.2 // indirect
-	github.com/hashicorp/go-hclog v1.2.1 // indirect
+	github.com/hashicorp/go-hclog v1.4.0 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
 	github.com/hashicorp/go-plugin v1.4.8 // indirect
 	github.com/hashicorp/go-safetemp v1.0.0 // indirect
